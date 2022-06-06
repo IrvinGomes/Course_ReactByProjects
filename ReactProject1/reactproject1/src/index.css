@@ -10,13 +10,30 @@ body {
 }
 
 .header {
-  width: 100%;
   background: darkblue;
   color: white;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.header h1 {
+  flex: 1;
+}
+
+.header img {
+  margin: auto;
+}
+
+.footer {
+  color: white;
+  background: black;
+  text-align: center;
+  padding: 0.5em;
 }
 
 .content {
-  width: 100%;
   flex: 1;
+  padding: 1em;
   background: lightgray;
 }

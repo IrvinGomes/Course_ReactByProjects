@@ -30,28 +30,32 @@ function Page() {
         <div className='page'>
             <Header />
             <Content />
+            <Footer />
         </div>
     )
 }
 
 function Logo() {
     return (
-        <img src={logo192} width="40px" />
+        <img src={logo192} height="40px" />
     )
 }
 
 function Header() {
     return (
-        <nav className='header'>
-            <Logo />
-            <h1>What am I expecting from React</h1>
-        </nav>
+        <header>
+            <nav className='header'>
+                <Logo />
+                <h1>Project 1</h1>
+            </nav>
+        </header>
     )
 }
 
 function Content() {
     return (
         <div className='content'>
+            <h1>What am I expecting from React</h1>
             <ol>
                 <li>Learn well to work with it</li>
                 <li>Know more technologies</li>
@@ -59,6 +63,16 @@ function Content() {
                 <li>Knowing that React has more support then Angular, it will be good to learn</li>
             </ol>
         </div>
+    )
+}
+
+function Footer() {
+
+    let year = new Date().getFullYear()
+    return (
+        <footer className='footer'>
+            <small>© {year} Gomes development. All rights reserved.</small>
+        </footer>
     )
 }
 
