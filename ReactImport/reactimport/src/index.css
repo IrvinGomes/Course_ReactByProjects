@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background: lightcoral;
+  padding: 0 1em;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.content {
+  flex: 1;
+  background: lightblue;
+}
