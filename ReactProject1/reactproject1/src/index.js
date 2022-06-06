@@ -44,7 +44,7 @@ function Header() {
     return (
         <nav className='header'>
             <Logo />
-            <h1>Fun facts about React</h1>
+            <h1>What am I expecting from React</h1>
         </nav>
     )
 }
@@ -52,13 +52,12 @@ function Header() {
 function Content() {
     return (
         <div className='content'>
-            <ul>
-                <li>Was first released in 2013</li>
-                <li>Was originally created by Jordan Walke</li>
-                <li>Has well over 100K stars on GitHub</li>
-                <li>Is maintained by Facebook</li>
-                <li>Powers thousands of enterprise apps, including mobile apps</li>
-            </ul>
+            <ol>
+                <li>Learn well to work with it</li>
+                <li>Know more technologies</li>
+                <li>Develop my knowlodge and improve myself</li>
+                <li>Knowing that React has more support then Angular, it will be good to learn</li>
+            </ol>
         </div>
     )
 }
