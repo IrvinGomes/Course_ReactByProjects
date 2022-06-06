@@ -37,7 +37,7 @@ function Page() {
 
 function Logo() {
     return (
-        <img src={logo192} height="40px" />
+        <img src={logo192} className="logo" />
     )
 }
 
@@ -47,8 +47,19 @@ function Header() {
             <nav className='header'>
                 <Logo />
                 <h1>Project 1</h1>
+                <Menu />
             </nav>
         </header>
+    )
+}
+
+function Menu() {
+    return (
+        <ul className='nav-items'>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
     )
 }
 

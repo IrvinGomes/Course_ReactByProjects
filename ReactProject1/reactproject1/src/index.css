@@ -10,19 +10,33 @@ body {
 }
 
 .header {
-  background: darkblue;
-  color: white;
   padding: 1em;
   display: flex;
-  flex-direction: row;
+  text-transform: uppercase;
+  box-shadow: 0em 3px 10px 1px lightblue;
+}
+
+.logo {
+  height: 60px;
 }
 
 .header h1 {
   flex: 1;
+  margin: auto;
 }
 
 .header img {
-  margin: auto;
+  margin: auto 0;
+}
+
+.nav-items {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items>li {
+  margin: 0 0.5em;
+  cursor: pointer;
 }
 
 .footer {
@@ -35,5 +49,4 @@ body {
 .content {
   flex: 1;
   padding: 1em;
-  background: lightgray;
 }
