@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import logo192 from './images/logo192.png'
+
+import Header from './components/Header'
+import Content from './components/Content';
+import Footer from './components/Footer';
 
 /**
  * Why do we need to import React from react in our files?
@@ -32,58 +35,6 @@ function Page() {
             <Content />
             <Footer />
         </div>
-    )
-}
-
-function Logo() {
-    return (
-        <img src={logo192} className="logo" />
-    )
-}
-
-function Header() {
-    return (
-        <header>
-            <nav className='header'>
-                <Logo />
-                <h1>Project 1</h1>
-                <Menu />
-            </nav>
-        </header>
-    )
-}
-
-function Menu() {
-    return (
-        <ul className='nav-items'>
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    )
-}
-
-function Content() {
-    return (
-        <div className='content'>
-            <h1>What am I expecting from React</h1>
-            <ol>
-                <li>Learn well to work with it</li>
-                <li>Know more technologies</li>
-                <li>Develop my knowlodge and improve myself</li>
-                <li>Knowing that React has more support then Angular, it will be good to learn</li>
-            </ol>
-        </div>
-    )
-}
-
-function Footer() {
-
-    let year = new Date().getFullYear()
-    return (
-        <footer className='footer'>
-            <small>© {year} Gomes development. All rights reserved.</small>
-        </footer>
     )
 }
 
