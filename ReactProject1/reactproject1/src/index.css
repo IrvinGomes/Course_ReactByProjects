@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  background: darkblue;
+  color: white;
+}
+
+.content {
+  width: 100%;
+  flex: 1;
+  background: lightgray;
+}
