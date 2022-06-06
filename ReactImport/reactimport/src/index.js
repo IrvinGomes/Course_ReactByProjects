@@ -2,9 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
+function Page() {
+  return (
+    <div className='page'>
+      <Navbar />
+      <Content />
+    </div>
+  )
+}
+
 function Navbar() {
   return (
-    <nav>
+    <nav className='navbar'>
       <h1>Irvin's Web</h1>
       <ul>
         <li>Pricing</li>
@@ -15,7 +24,13 @@ function Navbar() {
   )
 }
 
+function Content() {
+  return (
+    <div className='content'></div>
+  )
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Navbar />
+  <Page />
 );
