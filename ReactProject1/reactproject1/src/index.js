@@ -2,10 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import Header from './components/Header'
-import Content from './components/Content';
-import Footer from './components/Footer';
-
+import App from './App'
 /**
  * Why do we need to import React from react in our files?
  *  ->React is what defines JSX.
@@ -28,17 +25,7 @@ import Footer from './components/Footer';
  *  ->We have small pieces that we can put together to make something larger/greater than the individual pieces
  */
 
-function Page() {
-    return (
-        <div className='page'>
-            <Header />
-            <Content />
-            <Footer />
-        </div>
-    )
-}
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Page />
+    <App />
 );

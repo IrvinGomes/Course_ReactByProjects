@@ -4,9 +4,9 @@ import logo192 from '../images/logo192.png'
 export default function Header() {
     return (
         <header>
-            <nav className='header'>
+            <nav className='nav'>
                 <Logo />
-                <h1>Project 1</h1>
+                <h3 className='nav--logo_text'>ReactExpectation</h3>
                 <Menu />
             </nav>
         </header>
@@ -15,16 +15,12 @@ export default function Header() {
 
 function Logo() {
     return (
-        <img src={logo192} className="logo" />
+        <img src={logo192} className="nav--logo" alt="Logo" />
     )
 }
 
 function Menu() {
     return (
-        <ul className='nav-items'>
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
+        <h4 className='nav--title'>React Course - Project 1</h4>
     )
 }
