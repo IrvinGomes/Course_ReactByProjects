@@ -3,31 +3,17 @@ import '../styles/Content.css';
 import Card from "./Card";
 import Hero from "./Hero";
 
-import Katie from '../images/katie-zaferes.png'
+import Data from '../data/data.js';
 
 export default function Content() {
-    const title = "Life Lessons with Katie Zaferes";
-    const price = 136
-
-    const list = [
-        { img: Katie, rating: 5.0, reviewCount: 6, country: "USA", title: title, price: price },
-        { img: Katie, rating: 5.0, reviewCount: 6, country: "USA", title: title, price: price },
-        { img: Katie, rating: 5.0, reviewCount: 6, country: "USA", title: title, price: price },
-        { img: Katie, rating: 5.0, reviewCount: 6, country: "USA", title: title, price: price },
-        { img: Katie, rating: 5.0, reviewCount: 6, country: "USA", title: title, price: price },
-        { img: Katie, rating: 5.0, reviewCount: 6, country: "USA", title: title, price: price },
-        { img: Katie, rating: 5.0, reviewCount: 6, country: "USA", title: title, price: price },
-        { img: Katie, rating: 5.0, reviewCount: 6, country: "USA", title: title, price: price }
-    ]
+    const items = Data.map((info) => {
+        return (<Card obj={info} key={info.id} />)
+    })
 
     return (
         <div className="content">
             <Hero />
-            <div className="content--list">
-                {list.map((info, i) => {
-                    return (<Card obj={info} key={i} />)
-                })}
-            </div>
+            <div className="content--list">{items}</div>
         </div>
     )
 }
