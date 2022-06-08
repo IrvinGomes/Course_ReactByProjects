@@ -6,14 +6,14 @@ export default function Profile() {
     return (
         <div className="profile">
             <div className="profile--img">
-                <img src={ProfilePic} />
+                <img src={ProfilePic} alt="" />
             </div>
             <div className="profile--content">
                 <h2 className="profile--name">Irvin Gomes</h2>
                 <p className="profile--position">Development Engineer</p>
                 <div className="profile--btns">
-                    <button className="profile--btn_email"><img src="https://cdn-icons-png.flaticon.com/512/712/712040.png" /><span>Email</span></button>
-                    <button className="profile--btn_linkedin"><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" /><span>LinkedIn</span></button>
+                    <button className="profile--btn_email"><img src="https://cdn-icons-png.flaticon.com/512/712/712040.png" alt="" /><span>Email</span></button>
+                    <button className="profile--btn_linkedin"><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="" /><span>LinkedIn</span></button>
                 </div>
                 <div className="profile--info">
                     <h3>About</h3>
