@@ -1,7 +1,10 @@
 import React from 'react';
+import Card from './components/Card';
 
 export default function App() {
     return (
-        <h1>App is working</h1>
+        <div className='app'>
+            <Card />
+        </div>
     )
 }
