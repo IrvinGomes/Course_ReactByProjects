@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: Poppins, sans-serif;
 }
 
 .app {
@@ -8,4 +9,8 @@ body {
     overflow: auto;
     display: flex;
     flex-direction: column;
+}
+
+.gray {
+    color: gray;
 }

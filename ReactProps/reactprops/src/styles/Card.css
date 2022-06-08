@@ -1,0 +1,19 @@
+.card {
+    width: 175px;
+    border-radius: 10px;
+}
+
+.card--img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+    height: 15px;
+}
+
+.card--star {
+    height: 100%;
+}
