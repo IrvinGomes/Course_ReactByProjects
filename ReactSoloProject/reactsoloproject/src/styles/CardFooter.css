@@ -1,0 +1,15 @@
+.footer {
+    margin: 0;
+    width: 100%;
+    background-color: #31313f;
+    color: white;
+    display: flex;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.footer>div,
+.footer>img {
+    margin: 1em auto;
+    width: 25px;
+}

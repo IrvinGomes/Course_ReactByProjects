@@ -1,0 +1,70 @@
+.profile {
+    text-align: center;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile--img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.profile--img>img {
+    height: 100%;
+    width: 100%;
+}
+
+.profile--content {
+    flex: 1;
+    margin: 0 1em;
+}
+
+.profile--name {
+    margin: 10px 10px auto;
+}
+
+.profile--position {
+    margin: 0;
+    color: wheat;
+    font-size: small;
+}
+
+.profile--btns {
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+}
+
+.profile--btn_email,
+.profile--btn_linkedin {
+    width: 47%;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile--btn_email>img,
+.profile--btn_linkedin>img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.profile--btn_email,
+.profile--btn_linkedin:hover {
+    cursor: pointer;
+}
+
+.profile--btn_linkedin {
+    background-color: lightblue;
+    margin-left: auto;
+}
+
+.profile--info {
+    text-align: left;
+}
