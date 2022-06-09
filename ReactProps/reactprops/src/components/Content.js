@@ -6,8 +6,8 @@ import Hero from "./Hero";
 import Data from '../data/data.js';
 
 export default function Content() {
-    const items = Data.map((info) => {
-        return (<Card obj={info} key={info.id} />)
+    const items = Data.map((item) => {
+        return <Card {...item} key={item.id} />
     })
 
     return (
