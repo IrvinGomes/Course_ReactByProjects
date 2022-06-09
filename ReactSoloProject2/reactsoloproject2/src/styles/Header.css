@@ -1,0 +1,17 @@
+.header {
+    background-color: #F55A5A;
+    color: white;
+    justify-content: center;
+    display: flex;
+    padding: 1em 0;
+}
+
+.header--img {
+    height: 20px;
+    margin: 0 0.5em;
+    filter: invert(100%);
+}
+
+.header--text {
+    margin: 0;
+}
