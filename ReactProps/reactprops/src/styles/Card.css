@@ -1,0 +1,32 @@
+.card {
+    position: relative;
+    width: 175px;
+    border-radius: 10px;
+    margin: 0 1em;
+    float: left;
+}
+
+.card--img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+    height: 15px;
+}
+
+.card--star {
+    height: 100%;
+}
+
+.card--badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 10px;
+    font-weight: bold;
+}

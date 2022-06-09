@@ -1,0 +1,9 @@
+.content {
+    flex: 1;
+}
+
+.content--list {
+    overflow: auto;
+    padding: 0 1em;
+
+}
