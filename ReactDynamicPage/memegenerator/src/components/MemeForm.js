@@ -3,10 +3,12 @@ import '../styles/MemeForm.css';
 
 export default function MemeForm() {
     return (
-        <form className="memeForm">
-            <input type="text" />
-            <input type="text" />
-            <input type="submit" />
-        </form>
+        <div>
+            <form className="memeForm">
+                <input className="memeForm--input" type="text" placeholder="Top Text" />
+                <input className="memeForm--input" type="text" placeholder="Bottom text" />
+                <button className="memeForm--submit">Get a new meme image 🖼️</button>
+            </form>
+        </div>
     )
 }
