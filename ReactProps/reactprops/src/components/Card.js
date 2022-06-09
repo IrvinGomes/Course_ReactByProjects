@@ -5,8 +5,8 @@ export default function Card(props) {
     return (
         <div className='card'>
             {
-                props.openSpots === 0 && <div className='card--badge'>SOLD OUT</div>
-                || props.location == "Online" && <div className='card--badge'>{props.location}</div>
+                (props.openSpots === 0 && <div className='card--badge'>SOLD OUT</div>)
+                || (props.location === "Online" && <div className='card--badge'>{props.location}</div>)
             }
             <img src={'/images/' + props.coverImg} alt='' className='card--img' />
             <div className='card--stats'>
