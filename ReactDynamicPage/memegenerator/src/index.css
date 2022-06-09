@@ -6,4 +6,6 @@ body {
     width: 100hw;
     height: 100hv;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
