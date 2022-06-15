@@ -4,19 +4,21 @@ import Data from '../data/memesData.js'
 
 export default function MemeForm() {
     const memes = Data.data.memes;
-    let [meme, setMeme] = useState();
-    let [top_text, setTopText] = useState();
-    let [bottom_text, setBottomText] = useState();
+    let [meme, setMeme] = useState({
+        url: '',
+        top_text: '',
+        bottom_text: ''
+    });
 
     function getMeme() {
-        setMeme(memes[Math.floor(Math.random() * memes.length)])
+        setMeme(prevMeme => ({ ...prevMeme, url: memes[Math.floor(Math.random() * memes.length)].url }))
     }
 
     function getTopText(event) {
-        setTopText(event.target.value)
+        setMeme(prevMeme => ({ ...prevMeme, top_text: event.target.value }))
     }
     function getBottomText(event) {
-        setBottomText(event.target.value)
+        setMeme(prevMeme => ({ ...prevMeme, bottom_text: event.target.value }))
     }
 
     return (
@@ -39,9 +41,9 @@ export default function MemeForm() {
                 </button>
             </div>
             <div className="memeImage">
-                <p className="memeImage--top_text">{top_text}</p>
-                {meme && <img src={meme.url} alt="" />}
-                <p className="memeImage--bottom_text">{bottom_text}</p>
+                <p className="memeImage--top_text">{meme.top_text}</p>
+                {meme.url && <img src={meme.url} alt="" />}
+                <p className="memeImage--bottom_text">{meme.bottom_text}</p>
             </div>
         </div>
     )
